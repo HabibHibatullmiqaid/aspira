@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Proposal ASPIRA - SMK Perpajakan Riau</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Proposal ASPIRA - SMK Perpajakan Riau</h1>
+</header>
+<h1 id="proposal-proyek-akhir">PROPOSAL PROYEK AKHIR</h1>
+<hr />
+<h2 id="aspira">ASPIRA</h2>
+<h3 id="aplikasi-sistem-presensi-dan-informasi">Aplikasi Sistem Presensi
+dan Informasi</h3>
+<h3 id="smk-perpajakan-riau">SMK Perpajakan Riau</h3>
+<p><strong>Diajukan sebagai Proyek Pengembangan Sistem
+Informasi</strong></p>
+<hr />
+<p><strong>SMK PERPAJAKAN RIAU</strong><br />
+Jl. Purnama No. 05, Pandau Jaya, Kec. Siak Hulu, Kabupaten Kampar,
+Riau<br />
+Tahun 2026</p>
+<hr />
+<h2 id="bab-i-pendahuluan">BAB I — PENDAHULUAN</h2>
+<hr />
+<h3 id="latar-belakang">1.1 Latar Belakang</h3>
+<p>Perkembangan teknologi informasi yang semakin pesat di era
+digitalisasi saat ini memberikan dampak besar terhadap berbagai sektor
+kehidupan, termasuk dunia pendidikan. Lembaga pendidikan dituntut untuk
+dapat beradaptasi dan memanfaatkan teknologi sebagai alat untuk
+meningkatkan efisiensi serta kualitas pelayanan administrasi
+akademik.</p>
+<p>SMK Perpajakan Riau merupakan satu-satunya sekolah menengah kejuruan
+yang berbasis perpajakan di Provinsi Riau, dengan visi menjadi lembaga
+pendidikan yang mampu menghasilkan lulusan yang kompeten, profesional,
+dan berintegritas. Sebagai sekolah yang terus berkembang, SMK Perpajakan
+Riau memiliki kebutuhan yang tinggi terhadap sistem pengelolaan data
+yang akurat, efisien, dan mudah diakses.</p>
+<p>Salah satu proses administrasi yang paling krusial dalam kegiatan
+belajar mengajar adalah pencatatan kehadiran (presensi) siswa. Presensi
+bukan sekadar formalitas administratif, melainkan merupakan indikator
+penting dalam mengukur kedisiplinan, partisipasi aktif, dan kemajuan
+belajar seorang siswa. Berdasarkan ketentuan Kemendikdasmen,
+ketidakhadiran siswa yang melebihi batas yang ditentukan dapat
+mempengaruhi nilai akhir hingga berujung pada tidak diperkenankannya
+siswa mengikuti ujian akhir.</p>
+<p>Saat ini, proses pencatatan kehadiran di SMK Perpajakan Riau masih
+dilakukan secara konvensional, yakni dengan memanfaatkan lembar daftar
+hadir fisik (kertas) yang diisi oleh guru pengajar di setiap pertemuan.
+Metode ini menimbulkan berbagai permasalahan, seperti risiko data hilang
+atau rusak, sulitnya proses rekap data secara berkala, keterlambatan
+penyampaian informasi kepada orang tua, serta tidak adanya akses daring
+yang memungkinkan pemantauan kehadiran secara <em>real-time</em>.</p>
+<p>Bertolak dari permasalahan tersebut, dibutuhkan sebuah solusi
+teknologi berbasis web yang mampu mengotomatisasi proses pencatatan,
+pengelolaan, dan pelaporan data presensi secara terpusat, efisien, dan
+dapat diakses dari berbagai perangkat — baik komputer <em>desktop</em>
+maupun perangkat <em>mobile</em> Android. Oleh karena itu,
+dikembangkanlah <strong>ASPIRA (Aplikasi Sistem Presensi dan Informasi
+SMK Perpajakan Riau)</strong> sebagai jawaban atas kebutuhan
+digitalisasi administrasi akademik yang modern, andal, dan sesuai dengan
+identitas institusi.</p>
+<hr />
+<h3 id="identifikasi-masalah">1.2 Identifikasi Masalah</h3>
+<p>Berdasarkan uraian latar belakang di atas, dapat diidentifikasi
+sejumlah permasalahan yang ada di SMK Perpajakan Riau terkait sistem
+presensi saat ini, yaitu:</p>
+<ol type="1">
+<li><p><strong>Tidak efisiennya proses pencatatan presensi secara
+manual</strong> yang masih menggunakan lembar kertas, sehingga memakan
+waktu dan berpotensi menimbulkan kesalahan pencatatan (<em>human
+error</em>).</p></li>
+<li><p><strong>Sulitnya proses rekap dan kompilasi data
+kehadiran</strong> yang dilakukan secara periodik
+(mingguan/bulanan/semester) karena harus dikerjakan secara manual oleh
+guru atau staf tata usaha.</p></li>
+<li><p><strong>Tidak adanya sistem pelaporan otomatis</strong> kepada
+pihak yang berkepentingan (kepala sekolah, wali kelas, atau orang tua)
+apabila terjadi ketidakhadiran yang melebihi ambang batas yang telah
+ditentukan.</p></li>
+<li><p><strong>Tidak tersedianya akses informasi kehadiran secara
+daring</strong> (<em>real-time</em>) bagi siswa untuk memantau rekam
+jejak presensi mereka sendiri secara mandiri.</p></li>
+<li><p><strong>Tidak adanya sistem pengelolaan data guru, siswa, kelas,
+dan jadwal pelajaran</strong> yang terintegrasi dalam satu platform
+digital yang terpusat dan mudah dioperasikan.</p></li>
+<li><p><strong>Risiko kehilangan dan kerusakan data</strong> akibat
+penyimpanan yang masih berbasis fisik (kertas) dan belum didukung
+cadangan data digital (<em>data backup</em>) yang sistematis.</p></li>
+</ol>
+<hr />
+<h3 id="rumusan-masalah">1.3 Rumusan Masalah</h3>
+<p>Berdasarkan identifikasi masalah yang telah dijabarkan, maka rumusan
+masalah dalam proyek ini adalah sebagai berikut:</p>
+<ol type="1">
+<li><p>Bagaimana merancang dan membangun sistem presensi berbasis web
+yang dapat menggantikan proses pencatatan kehadiran secara manual di SMK
+Perpajakan Riau?</p></li>
+<li><p>Bagaimana mengimplementasikan sistem manajemen data terpadu yang
+mencakup pengelolaan data guru, siswa, kelas, mata pelajaran, dan jadwal
+pelajaran dalam satu platform?</p></li>
+<li><p>Bagaimana menyediakan fitur pelaporan dan rekap data absensi
+secara otomatis yang dapat diakses oleh masing-masing <em>role</em>
+pengguna (admin, guru, dan siswa) sesuai dengan hak aksesnya?</p></li>
+<li><p>Bagaimana membangun antarmuka pengguna (<em>user interface</em>)
+yang responsif sehingga aplikasi dapat digunakan secara optimal baik di
+perangkat <em>desktop</em> maupun perangkat <em>mobile</em>
+Android?</p></li>
+</ol>
+<hr />
+<h3 id="batasan-masalah">1.4 Batasan Masalah</h3>
+<p>Agar pembahasan dalam proyek ini lebih terarah dan terstruktur, maka
+ditetapkan batasan-batasan sebagai berikut:</p>
+<ol type="1">
+<li><p>Sistem yang dikembangkan <strong>hanya mencakup lingkup SMK
+Perpajakan Riau</strong> dan tidak dimaksudkan untuk diimplementasikan
+pada institusi pendidikan lain.</p></li>
+<li><p>Pengguna sistem dibatasi pada tiga <em>role</em> pengguna,
+yaitu:</p>
+<ul>
+<li><strong>Administrator</strong> (Super Admin): Memiliki akses penuh
+untuk mengelola seluruh data master sistem, termasuk data guru, siswa,
+kelas, mata pelajaran, jadwal, dan pengguna.</li>
+<li><strong>Guru</strong>: Memiliki akses untuk melakukan pencatatan
+presensi kelas, memantau riwayat absensi, dan melihat statistik
+kehadiran siswa pada kelas yang diampunya.</li>
+<li><strong>Siswa</strong>: Memiliki akses terbatas untuk memantau rekam
+jejak kehadiran pribadi mereka sendiri.</li>
+</ul></li>
+<li><p>Sistem presensi yang dibangun adalah <strong>presensi berbasis
+rekam data digital oleh guru</strong> melalui antarmuka web dan tidak
+mencakup teknologi biometrik (sidik jari/wajah) maupun QR Code.</p></li>
+<li><p>Laporan yang dihasilkan sistem mencakup laporan <strong>harian,
+mingguan, bulanan, dan per semester</strong>, dalam format yang dapat
+dicetak atau diekspor.</p></li>
+<li><p>Teknologi yang digunakan dalam pengembangan sistem ini
+adalah:</p>
+<ul>
+<li><strong>Front-end Framework</strong>: Vue.js 3 dengan Composition
+API</li>
+<li><strong>Back-end &amp; Database</strong>: Supabase (berbasis
+PostgreSQL <em>cloud</em>)</li>
+<li><strong>Build Tool</strong>: Vite</li>
+<li><strong>Bahasa Pemrograman</strong>: JavaScript (ES6+)</li>
+</ul></li>
+<li><p>Pengujian sistem dilakukan secara fungsional pada
+<strong>jaringan lokal (LAN/Wi-Fi)</strong> dan tidak mencakup penerapan
+(<em>deployment</em>) di server publik (<em>web hosting</em>) dalam
+lingkup proyek ini.</p></li>
+</ol>
+<hr />
+<h3 id="tujuan-dan-manfaat">1.5 Tujuan dan Manfaat</h3>
+<h4 id="tujuan">1.5.1 Tujuan</h4>
+<p>Tujuan dari pengembangan proyek ASPIRA ini adalah:</p>
+<ol type="1">
+<li><p>Merancang dan membangun sebuah aplikasi sistem presensi dan
+informasi berbasis web yang modern untuk SMK Perpajakan Riau dengan nama
+<strong>ASPIRA (Aplikasi Sistem Presensi dan Informasi SMK Perpajakan
+Riau)</strong>.</p></li>
+<li><p>Mengimplementasikan sistem manajemen data akademik yang
+terintegrasi, meliputi pengelolaan data guru, siswa, kelas, mata
+pelajaran, dan jadwal pelajaran dalam satu platform terpadu.</p></li>
+<li><p>Menghadirkan fitur pencatatan presensi secara digital oleh guru
+yang dapat diakses dari perangkat <em>desktop</em> maupun perangkat
+<em>mobile</em> Android secara responsif.</p></li>
+<li><p>Menyediakan sistem pelaporan dan rekap kehadiran yang otomatis
+dan dapat diakses sesuai hak akses masing-masing pengguna (admin, guru,
+siswa).</p></li>
+<li><p>Meningkatkan efisiensi, akurasi, dan transparansi dalam proses
+pengelolaan data kehadiran di lingkungan SMK Perpajakan Riau.</p></li>
+</ol>
+<h4 id="manfaat">1.5.2 Manfaat</h4>
+<p>Pengembangan aplikasi ASPIRA ini diharapkan dapat memberikan manfaat
+nyata bagi berbagai pihak, di antaranya:</p>
+<p><strong>a. Bagi Sekolah (Institusi)</strong> - Mewujudkan
+digitalisasi administrasi akademik yang selaras dengan program
+transformasi digital pendidikan nasional. - Tersedianya data presensi
+yang akurat, terpusat, dan mudah diakses sebagai dasar pengambilan
+keputusan manajerial. - Mengurangi beban kerja administratif staf tata
+usaha dalam proses rekap dan pembuatan laporan kehadiran secara berkala.
+- Meningkatkan citra sekolah sebagai institusi pendidikan yang modern
+dan berbasis teknologi.</p>
+<p><strong>b. Bagi Guru</strong> - Memudahkan proses pencatatan presensi
+siswa secara cepat, efisien, dan akurat tanpa bergantung pada media
+kertas. - Menyediakan akses statistik dan riwayat kehadiran kelas yang
+dapat dipantau secara langsung (<em>real-time</em>). - Mempermudah
+proses pembuatan dan pengelolaan laporan kehadiran per kelas, per mata
+pelajaran, maupun per periode waktu.</p>
+<p><strong>c. Bagi Siswa</strong> - Memberikan transparansi kepada siswa
+untuk secara mandiri memantau rekam jejak kehadiran mereka melalui
+portal daring. - Mendorong kesadaran dan kedisiplinan siswa terhadap
+kehadiran sebagai bagian dari pembentukan karakter dan etos kerja yang
+profesional.</p>
+<p><strong>d. Bagi Pengembang</strong> - Memberikan pengalaman nyata
+dalam merancang, membangun, dan mengimplementasikan sistem informasi
+berbasis web yang terintegrasi dengan teknologi <em>cloud</em> modern. -
+Meningkatkan kompetensi teknis di bidang pengembangan aplikasi web
+menggunakan <em>framework</em> Vue.js 3, Supabase, dan ekosistem
+pengembangan modern. - Menghasilkan karya nyata yang dapat dijadikan
+portofolio pengembangan aplikasi pendidikan berbasis teknologi.</p>
+<hr />
+<p><em>Dokumen ini merupakan bagian dari proposal pengembangan proyek
+sistem informasi akademik SMK Perpajakan Riau — ASPIRA Tahun
+2026.</em></p>
+<hr />
+<h2 id="bab-ii-tinjauan-pustaka">BAB II — TINJAUAN PUSTAKA</h2>
+<hr />
+<h3 id="sistem-informasi">2.1 Sistem Informasi</h3>
+<p>Sistem informasi adalah sekumpulan komponen yang saling berinteraksi
+untuk mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi
+guna mendukung pengambilan keputusan dan pengendalian dalam sebuah
+organisasi (Laudon &amp; Laudon, 2020). Dalam konteks institusi
+pendidikan, sistem informasi berperan penting dalam mengelola data
+akademik, administrasi, dan operasional sekolah secara terpadu dan
+efisien.</p>
+<h3 id="sistem-presensi-digital">2.2 Sistem Presensi Digital</h3>
+<p>Presensi digital adalah metode pencatatan kehadiran yang memanfaatkan
+teknologi informasi sebagai media utama pengganti lembar hadir fisik.
+Menurut Jogiyanto (2017), sistem presensi berbasis teknologi memiliki
+keunggulan berupa akurasi yang lebih tinggi, kemudahan akses, serta
+kemampuan untuk menghasilkan laporan secara otomatis dan real-time
+dibandingkan metode manual.</p>
+<p>Beberapa bentuk sistem presensi digital yang umum digunakan antara
+lain: - <strong>Presensi berbasis web</strong>: Guru mencatat kehadiran
+melalui antarmuka aplikasi berbasis browser. - <strong>Presensi QR
+Code</strong>: Siswa melakukan <em>check-in</em> dengan memindai kode QR
+yang disediakan guru. - <strong>Presensi Biometrik</strong>: Menggunakan
+sidik jari atau pengenalan wajah untuk verifikasi kehadiran.</p>
+<p>Dalam proyek ASPIRA, pendekatan yang digunakan adalah
+<strong>presensi berbasis web</strong> yang dioperasikan oleh guru,
+karena dianggap paling praktis, mudah diimplementasikan, dan tidak
+memerlukan perangkat keras tambahan.</p>
+<h3 id="aplikasi-berbasis-web">2.3 Aplikasi Berbasis Web</h3>
+<p>Aplikasi berbasis web (<em>web-based application</em>) adalah
+perangkat lunak yang dapat diakses melalui peramban (<em>browser</em>)
+internet tanpa perlu diinstal secara lokal pada perangkat pengguna.
+Menurut Pressman (2014), aplikasi web modern memiliki karakteristik
+utama berupa aksesibilitas tinggi, kemudahan pembaruan
+(<em>update</em>), serta kemampuan diakses dari berbagai jenis perangkat
+(<em>cross-platform</em>).</p>
+<h3 id="teknologi-yang-digunakan">2.4 Teknologi yang Digunakan</h3>
+<h4 id="vue.js-3">2.4.1 Vue.js 3</h4>
+<p>Vue.js adalah <em>framework</em> JavaScript progresif yang digunakan
+untuk membangun antarmuka pengguna (<em>user interface</em>) berbasis
+web. Vue.js 3 menghadirkan <strong>Composition API</strong> yang
+memungkinkan penulisan kode yang lebih terstruktur, <em>reusable</em>,
+dan mudah dipelihara. Vue.js dikenal memiliki kurva belajar yang rendah
+namun tetap mampu mendukung pengembangan aplikasi berskala besar (Vue.js
+Documentation, 2024).</p>
+<p><strong>Keunggulan Vue.js 3:</strong> - Reaktivitas data yang efisien
+dengan sistem <em>Virtual DOM</em> - Composition API untuk pengelolaan
+logika yang lebih modular - Ekosistem yang lengkap (Vue Router, Pinia) -
+Ukuran <em>bundle</em> yang ringan dan performa tinggi</p>
+<h4 id="supabase">2.4.2 Supabase</h4>
+<p>Supabase adalah platform <em>Backend-as-a-Service</em> (BaaS)
+<em>open-source</em> yang menyediakan layanan database PostgreSQL,
+autentikasi pengguna, penyimpanan file, dan API secara real-time.
+Supabase sering disebut sebagai alternatif <em>open-source</em> dari
+Firebase yang menawarkan kemampuan pengelolaan data relasional yang
+lebih kuat (Supabase Documentation, 2024).</p>
+<p><strong>Keunggulan Supabase:</strong> - Database PostgreSQL yang
+handal dan mendukung relasi data kompleks - <em>Row Level Security</em>
+(RLS) untuk pengamanan data per baris - API RESTful yang otomatis dibuat
+dari skema database - <em>Real-time</em> subscriptions untuk
+sinkronisasi data langsung - <em>Dashboard</em> manajemen database yang
+intuitif</p>
+<h4 id="vite">2.4.3 Vite</h4>
+<p>Vite adalah <em>build tool</em> generasi berikutnya untuk
+pengembangan aplikasi web modern. Vite memanfaatkan modul ES (<em>ES
+Modules</em>) secara langsung di browser selama pengembangan,
+menghasilkan waktu <em>startup</em> server yang hampir instan dan
+pembaruan HMR (<em>Hot Module Replacement</em>) yang sangat cepat (Vite
+Documentation, 2024).</p>
+<h4 id="postgresql">2.4.4 PostgreSQL</h4>
+<p>PostgreSQL adalah sistem manajemen basis data relasional
+(<em>RDBMS</em>) yang bersifat <em>open-source</em> dan memiliki
+kemampuan yang sangat handal. PostgreSQL mendukung tipe data yang
+beragam, transaksi ACID, serta memiliki performa yang sangat baik untuk
+pengelolaan data dalam skala besar. Dalam proyek ini, PostgreSQL
+digunakan sebagai lapisan database melalui layanan Supabase.</p>
+<h3 id="responsive-web-design">2.5 Responsive Web Design</h3>
+<p><em>Responsive Web Design</em> (RWD) adalah pendekatan desain
+antarmuka web yang memastikan tampilan dan fungsionalitas aplikasi dapat
+beradaptasi secara optimal pada berbagai ukuran layar, mulai dari
+<em>desktop</em>, tablet, hingga perangkat <em>mobile</em> (Marcotte,
+2010). Penerapan RWD dalam ASPIRA memungkinkan aplikasi untuk digunakan
+secara nyaman baik di komputer sekolah maupun di perangkat
+<em>smartphone</em> Android guru dan siswa.</p>
+<p>Teknik utama yang digunakan dalam RWD antara lain: -
+<strong><em>Media Queries</em> CSS</strong>: Aturan CSS yang diterapkan
+berdasarkan lebar layar perangkat - <strong>Fluid Grid</strong>: Tata
+letak berbasis persentase yang fleksibel - <strong>Flexible
+Images</strong>: Gambar yang menyesuaikan lebar kontainernya</p>
+<h3 id="penelitian-terdahulu">2.6 Penelitian Terdahulu</h3>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 32%" />
+<col style="width: 13%" />
+<col style="width: 21%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>Peneliti / Tahun</th>
+<th>Judul</th>
+<th>Teknologi</th>
+<th>Keterkaitan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Purnama, et al. (2021)</td>
+<td>Sistem Informasi Presensi Siswa Berbasis Web di SMK Negeri 1
+Pekanbaru</td>
+<td>PHP, MySQL</td>
+<td>Konsep sistem presensi berbasis web untuk SMK</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Hidayat &amp; Setiawan (2022)</td>
+<td>Rancang Bangun Aplikasi Absensi Digital Menggunakan Framework
+Vue.js</td>
+<td>Vue.js 2, Laravel</td>
+<td>Penggunaan Vue.js sebagai <em>front-end</em> sistem absensi</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Andriani, et al. (2023)</td>
+<td>Implementasi Supabase sebagai Backend Sistem Informasi Sekolah</td>
+<td>Vue.js 3, Supabase</td>
+<td>Kombinasi Vue.js 3 dan Supabase untuk sistem informasi</td>
+</tr>
+</tbody>
+</table>
+<p>Berdasarkan penelitian-penelitian di atas, proyek ASPIRA hadir dengan
+kebaruan berupa integrasi teknologi <strong>Vue.js 3 + Supabase</strong>
+secara penuh untuk sistem presensi yang mencakup manajemen
+multi-<em>role</em> (Admin, Guru, Siswa) dan antarmuka yang responsif
+untuk perangkat <em>mobile</em> Android, khususnya diterapkan di SMK
+Perpajakan Riau.</p>
+<hr />
+<h2 id="bab-iii-metodologi-pengembangan">BAB III — METODOLOGI
+PENGEMBANGAN</h2>
+<hr />
+<h3 id="metode-pengembangan-sistem">3.1 Metode Pengembangan Sistem</h3>
+<p>Proyek ASPIRA dikembangkan menggunakan pendekatan <strong>metode
+<em>Waterfall</em></strong> yang merupakan model pengembangan perangkat
+lunak secara berurutan dan terstruktur. Metode ini dipilih karena
+kebutuhan sistem telah dapat didefinisikan secara jelas sejak awal,
+sehingga setiap tahapan dapat dieksekusi secara sistematis sebelum
+beralih ke tahapan berikutnya.</p>
+<pre><code>┌───────────────────────────────────────────────────────┐
+│  1. Analisis Kebutuhan                                │
+│         ↓                                             │
+│  2. Perancangan Sistem (Desain)                       │
+│         ↓                                             │
+│  3. Implementasi (Coding)                             │
+│         ↓                                             │
+│  4. Pengujian (Testing)                               │
+│         ↓                                             │
+│  5. Pemeliharaan (Maintenance)                        │
+└───────────────────────────────────────────────────────┘</code></pre>
+<h3 id="tahapan-pengembangan">3.2 Tahapan Pengembangan</h3>
+<h4 id="analisis-kebutuhan">3.2.1 Analisis Kebutuhan</h4>
+<p>Pada tahap ini dilakukan pengumpulan informasi mengenai kebutuhan
+sistem melalui: - <strong>Observasi langsung</strong>: Mengamati proses
+pencatatan presensi yang berjalan saat ini di SMK Perpajakan Riau. -
+<strong>Wawancara</strong>: Mengumpulkan informasi dari guru, staf tata
+usaha, dan siswa mengenai kebutuhan dan harapan terhadap sistem baru. -
+<strong>Studi dokumentasi</strong>: Mengkaji dokumen administrasi
+akademik yang ada untuk memahami alur data yang berlaku.</p>
+<p>Hasil analisis menghasilkan dua jenis kebutuhan:</p>
+<p><strong>a. Kebutuhan Fungsional</strong></p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Kebutuhan</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Login dan autentikasi berdasarkan role</td>
+<td>Semua</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Manajemen data guru (CRUD)</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Manajemen data siswa (CRUD)</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Manajemen data kelas &amp; mata pelajaran</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Manajemen jadwal pelajaran</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Pencatatan presensi harian</td>
+<td>Guru</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Riwayat dan statistik absensi kelas</td>
+<td>Guru</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Laporan rekap kehadiran (filter periode)</td>
+<td>Admin, Guru</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Pemantauan rekam kehadiran pribadi</td>
+<td>Siswa</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Dashboard statistik ringkasan</td>
+<td>Semua</td>
+</tr>
+</tbody>
+</table>
+<p><strong>b. Kebutuhan Non-Fungsional</strong></p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Kebutuhan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Antarmuka responsif (Desktop &amp; Mobile Android)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Keamanan data dengan sistem autentikasi berbasis token</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Performa loading halaman yang cepat (&lt; 3 detik)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Kompatibel dengan browser modern (Chrome, Firefox, Edge)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Data tersimpan di cloud (Supabase) dengan keamanan RLS</td>
+</tr>
+</tbody>
+</table>
+<h4 id="perancangan-sistem">3.2.2 Perancangan Sistem</h4>
+<p>Tahap perancangan mencakup:</p>
+<p><strong>a. Perancangan Arsitektur Sistem</strong></p>
+<pre><code>┌─────────────────────────────────────────────────────────┐
+│                    PENGGUNA                             │
+│   (Admin / Guru / Siswa — Browser Desktop &amp; Android)   │
+└──────────────────────┬──────────────────────────────────┘
+                       │ HTTP/HTTPS
+┌──────────────────────▼──────────────────────────────────┐
+│              FRONT-END (Vue.js 3 + Vite)               │
+│  - Halaman Login        - Dashboard Admin               │
+│  - Portal Guru          - Portal Siswa                  │
+│  - Manajemen Data       - Laporan &amp; Rekap               │
+└──────────────────────┬──────────────────────────────────┘
+                       │ REST API / Supabase Client
+┌──────────────────────▼──────────────────────────────────┐
+│           BACK-END (Supabase BaaS)                      │
+│  - Auth (JWT Token)     - Row Level Security (RLS)      │
+│  - REST API Auto-gen    - Real-time Subscriptions       │
+└──────────────────────┬──────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────┐
+│              DATABASE (PostgreSQL)                      │
+│  users │ guru │ siswa │ kelas │ mapel │ jadwal │ absensi│
+└─────────────────────────────────────────────────────────┘</code></pre>
+<p><strong>b. Perancangan Database</strong></p>
+<p>Database ASPIRA terdiri dari 8 tabel utama dengan relasi antar tabel
+sebagai berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Tabel</th>
+<th>Fungsi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>users</code></td>
+<td>Menyimpan data akun pengguna beserta role</td>
+</tr>
+<tr>
+<td><code>guru</code></td>
+<td>Data lengkap guru pengajar</td>
+</tr>
+<tr>
+<td><code>siswa</code></td>
+<td>Data lengkap siswa aktif</td>
+</tr>
+<tr>
+<td><code>kelas</code></td>
+<td>Data kelas/rombel (X, XI, XII)</td>
+</tr>
+<tr>
+<td><code>mata_pelajaran</code></td>
+<td>Data mata pelajaran yang diajarkan</td>
+</tr>
+<tr>
+<td><code>jadwal_pelajaran</code></td>
+<td>Relasi guru-mapel-kelas beserta hari/jam</td>
+</tr>
+<tr>
+<td><code>tahun_ajaran</code></td>
+<td>Periode tahun ajaran aktif</td>
+</tr>
+<tr>
+<td><code>absensi</code></td>
+<td>Rekam data presensi harian siswa per sesi</td>
+</tr>
+</tbody>
+</table>
+<p><strong>c. Perancangan Antarmuka (UI/UX)</strong></p>
+<p>Desain antarmuka ASPIRA terinspirasi dari gaya akademik <strong>SPADA
+UIR</strong> dengan menggunakan palet warna: - <strong>Warna
+Utama</strong>: Hijau forest (<code>#0a5c36</code>) — identitas akademik
+- <strong>Warna Aksen</strong>: Emas (<code>#f1c40f</code>) — lambang
+prestasi - <strong>Latar</strong>: Abu-abu terang (<code>#f4f6f9</code>)
+— kesan bersih dan profesional</p>
+<h4 id="implementasi-coding">3.2.3 Implementasi (Coding)</h4>
+<p>Pengembangan ASPIRA dilaksanakan menggunakan <em>stack</em> teknologi
+berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Komponen</th>
+<th>Teknologi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Framework Front-end</td>
+<td>Vue.js 3 (Composition API)</td>
+</tr>
+<tr>
+<td>State Management</td>
+<td>Pinia</td>
+</tr>
+<tr>
+<td>Routing</td>
+<td>Vue Router 4</td>
+</tr>
+<tr>
+<td>Build Tool</td>
+<td>Vite 8</td>
+</tr>
+<tr>
+<td>Database &amp; Auth</td>
+<td>Supabase (PostgreSQL)</td>
+</tr>
+<tr>
+<td>Visualisasi Data</td>
+<td>Chart.js + Vue-ChartJS</td>
+</tr>
+<tr>
+<td>Styling</td>
+<td>Vanilla CSS (Custom Design System)</td>
+</tr>
+</tbody>
+</table>
+<p>Proses implementasi dilakukan secara bertahap: 1. <strong>Setup
+proyek</strong> dan konfigurasi koneksi Supabase 2. <strong>Pembangunan
+sistem autentikasi</strong> (login, logout, guard router) 3.
+<strong>Pengembangan layout</strong> tiga role (Admin, Guru, Siswa) yang
+responsif 4. <strong>Pembuatan halaman manajemen data</strong> (CRUD
+Guru, Siswa, Kelas, Mapel, Jadwal) 5. <strong>Fitur pencatatan
+presensi</strong> dan rekap data absensi 6. <strong>Dashboard
+visualisasi</strong> dengan grafik statistik kehadiran 7.
+<strong>Pengujian fungsional</strong> dan perbaikan
+(<em>debugging</em>)</p>
+<h4 id="pengujian-testing">3.2.4 Pengujian (Testing)</h4>
+<p>Pengujian dilakukan menggunakan metode <strong>Black-Box
+Testing</strong>, yaitu pengujian yang berfokus pada fungsionalitas
+sistem tanpa melihat kode internal. Aspek yang diuji meliputi:</p>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Aspek Pengujian</th>
+<th>Metode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Fungsi login &amp; autentikasi</td>
+<td>Black-Box</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Manajemen data (CRUD) semua modul</td>
+<td>Black-Box</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pencatatan dan rekap presensi</td>
+<td>Black-Box</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Akses sesuai role (Admin/Guru/Siswa)</td>
+<td>Black-Box</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Tampilan responsif di Mobile Android</td>
+<td>UI Testing</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Koneksi dan sinkronisasi database Supabase</td>
+<td>Integration Testing</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pemeliharaan-maintenance">3.2.5 Pemeliharaan (Maintenance)</h4>
+<p>Setelah sistem dinyatakan lulus uji, tahap pemeliharaan meliputi: -
+Pembaruan data seeding awal (data guru, siswa, kelas, dan jadwal) -
+Dokumentasi penggunaan sistem untuk setiap role pengguna - Panduan
+teknis untuk pengembang jika diperlukan pengembangan lanjutan</p>
+<h3 id="jadwal-pengerjaan-proyek">3.3 Jadwal Pengerjaan Proyek</h3>
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Kegiatan</th>
+<th style="text-align: center;">Minggu 1</th>
+<th style="text-align: center;">Minggu 2</th>
+<th style="text-align: center;">Minggu 3</th>
+<th style="text-align: center;">Minggu 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Analisis Kebutuhan</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Perancangan Sistem &amp; Database</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Setup Proyek &amp; Autentikasi</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Implementasi Fitur Utama</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Pengujian &amp; Debugging</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Dokumentasi &amp; Laporan</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alat-dan-bahan-pengembangan">3.4 Alat dan Bahan
+Pengembangan</h3>
+<p><strong>Perangkat Keras (<em>Hardware</em>):</strong> -
+Laptop/Komputer dengan spesifikasi minimum: RAM 8 GB, Processor Intel
+Core i5 / setara - Perangkat Android untuk pengujian tampilan
+<em>mobile</em> - Koneksi internet untuk akses Supabase
+<em>cloud</em></p>
+<p><strong>Perangkat Lunak (<em>Software</em>):</strong> -
+<strong>Visual Studio Code</strong> — Editor kode utama -
+<strong>Node.js v18+</strong> — <em>Runtime</em> JavaScript -
+<strong>npm</strong> — Manajer paket - <strong>Git</strong> — Versi
+kontrol kode - <strong>Google Chrome</strong> — Browser utama untuk
+pengujian - <strong>Supabase Dashboard</strong> — Pengelolaan database
+<em>cloud</em></p>
+<hr />
+<p><em>Dokumen ini merupakan bagian dari proposal pengembangan proyek
+sistem informasi akademik SMK Perpajakan Riau — ASPIRA Tahun
+2026.</em></p>
+<hr />
+<h2 id="bab-iv-hasil-dan-pembahasan">BAB IV — HASIL DAN PEMBAHASAN</h2>
+<hr />
+<h3 id="hasil-perancangan-sistem">4.1 Hasil Perancangan Sistem</h3>
+<p>Hasil dari tahap perancangan menghasilkan sebuah aplikasi web bernama
+<strong>ASPIRA</strong> yang dibangun menggunakan Vue.js 3 sebagai
+<em>front-end</em> dan Supabase (PostgreSQL) sebagai <em>backend</em>
+dan database. Sistem ini berhasil diimplementasikan sesuai dengan
+rancangan yang telah ditetapkan sebelumnya, mencakup tiga level akses
+pengguna dan berbagai modul manajemen data akademik.</p>
+<h3 id="antarmuka-pengguna-user-interface">4.2 Antarmuka Pengguna (User
+Interface)</h3>
+<h4 id="halaman-login">4.2.1 Halaman Login</h4>
+<p>Halaman login merupakan pintu masuk utama ke sistem ASPIRA. Halaman
+ini dirancang dengan tampilan yang bersih, profesional, dan beridentitas
+kuat sebagai sistem milik SMK Perpajakan Riau. Elemen-elemen yang
+terdapat pada halaman login antara lain:</p>
+<ul>
+<li><strong>Logo resmi SMK Perpajakan Riau</strong> yang ditampilkan
+secara prominan</li>
+<li><strong>Nama aplikasi ASPIRA</strong> dengan tagline lengkap
+(<em>Aplikasi Sistem Presensi &amp; Informasi</em>)</li>
+<li><strong>Form login</strong> dengan kolom <em>username</em> dan
+<em>password</em></li>
+<li><strong>Statistik ringkas</strong> (500+ Siswa Aktif, 30+ Guru
+Pengajar, Akses 24/7)</li>
+<li><strong>Tombol demo</strong> untuk memudahkan pengujian setiap
+role</li>
+</ul>
+<p>Desain halaman login terinspirasi dari gaya akademik portal
+<strong>SPADA UIR</strong> dengan menggunakan palet warna hijau forest
+dan aksen emas yang mencerminkan identitas akademik yang
+profesional.</p>
+<h4 id="dashboard-administrator">4.2.2 Dashboard Administrator</h4>
+<p>Dashboard Admin menampilkan ringkasan data statistik secara
+menyeluruh dalam satu layar, terdiri dari:</p>
+<table>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 52%" />
+</colgroup>
+<thead>
+<tr>
+<th>Komponen</th>
+<th>Deskripsi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Kartu Statistik</strong></td>
+<td>Total Guru, Total Siswa, Total Kelas, Sesi Absensi Hari Ini</td>
+</tr>
+<tr>
+<td><strong>Grafik Tren Kehadiran</strong></td>
+<td>Grafik garis mingguan yang menampilkan tingkat kehadiran
+(Chart.js)</td>
+</tr>
+<tr>
+<td><strong>Diagram Status Absensi</strong></td>
+<td>Diagram lingkaran distribusi Hadir / Sakit / Izin / Alpha</td>
+</tr>
+<tr>
+<td><strong>Menu Navigasi Lengkap</strong></td>
+<td>Akses ke semua modul: Guru, Siswa, Kelas, Mapel, Jadwal, Absensi,
+Laporan</td>
+</tr>
+</tbody>
+</table>
+<h4 id="portal-guru">4.2.3 Portal Guru</h4>
+<p>Portal Guru menyediakan fitur utama bagi guru pengajar, meliputi: -
+<strong>Dashboard Guru</strong>: Ringkasan jadwal mengajar hari ini dan
+statistik kehadiran kelas - <strong>Jadwal Mengajar</strong>: Daftar
+jadwal mengajar berdasarkan hari dan jam - <strong>Isi Absensi</strong>:
+Form pencatatan presensi siswa dengan pilihan status
+(Hadir/Sakit/Izin/Alpha) - <strong>Riwayat Absensi</strong>: Rekap
+historis pencatatan presensi yang telah dilakukan -
+<strong>Statistik</strong>: Grafik dan data statistik kehadiran per
+kelas</p>
+<h4 id="portal-siswa">4.2.4 Portal Siswa</h4>
+<p>Portal Siswa menampilkan informasi kehadiran pribadi siswa, meliputi:
+- <strong>Dashboard Siswa</strong>: Ringkasan persentase kehadiran dan
+grafik absensi personal - <strong>Absensi Saya</strong>: Tabel riwayat
+kehadiran lengkap dengan filter tanggal - <strong>Profil Saya</strong>:
+Informasi data diri siswa yang tersimpan di sistem</p>
+<h4 id="modul-manajemen-data-admin">4.2.5 Modul Manajemen Data
+(Admin)</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Modul</th>
+<th>Fitur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manajemen Guru</strong></td>
+<td>Tambah, lihat, edit, hapus data guru; pencarian dan filter</td>
+</tr>
+<tr>
+<td><strong>Manajemen Siswa</strong></td>
+<td>Tambah, lihat, edit, hapus data siswa; filter berdasarkan kelas</td>
+</tr>
+<tr>
+<td><strong>Manajemen Kelas</strong></td>
+<td>Tambah dan kelola data kelas/rombel beserta wali kelas</td>
+</tr>
+<tr>
+<td><strong>Mata Pelajaran</strong></td>
+<td>Pengelolaan data mata pelajaran dan jurusan terkait</td>
+</tr>
+<tr>
+<td><strong>Jadwal Pelajaran</strong></td>
+<td>Pembuatan jadwal mingguan relasi guru-mapel-kelas</td>
+</tr>
+<tr>
+<td><strong>Data Absensi</strong></td>
+<td>Rekap dan filter data presensi seluruh siswa</td>
+</tr>
+<tr>
+<td><strong>Laporan</strong></td>
+<td>Filter laporan berdasarkan periode, kelas, guru, dan mata
+pelajaran</td>
+</tr>
+<tr>
+<td><strong>Manajemen Users</strong></td>
+<td>Pengelolaan akun pengguna dan pengaturan role</td>
+</tr>
+</tbody>
+</table>
+<h3 id="hasil-pengujian-sistem">4.3 Hasil Pengujian Sistem</h3>
+<p>Pengujian sistem dilakukan menggunakan metode <strong>Black-Box
+Testing</strong> terhadap seluruh fitur utama ASPIRA. Berikut adalah
+hasil pengujian yang telah dilaksanakan:</p>
+<h4 id="pengujian-autentikasi">4.3.1 Pengujian Autentikasi</h4>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 29%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>Skenario Uji</th>
+<th>Data Masukan</th>
+<th>Hasil yang Diharapkan</th>
+<th>Hasil Aktual</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Login Admin valid</td>
+<td>username: <code>admin</code>, password: <code>admin123</code></td>
+<td>Masuk ke Dashboard Admin</td>
+<td>Berhasil masuk ke Dashboard Admin</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Login Guru valid</td>
+<td>username: <code>guru1</code>, password: <code>guru123</code></td>
+<td>Masuk ke Portal Guru</td>
+<td>Berhasil masuk ke Portal Guru</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Login Siswa valid</td>
+<td>username: <code>siswa1</code>, password: <code>siswa123</code></td>
+<td>Masuk ke Portal Siswa</td>
+<td>Berhasil masuk ke Portal Siswa</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Login dengan password salah</td>
+<td>username: <code>admin</code>, password: <code>salah</code></td>
+<td>Muncul pesan error</td>
+<td>Pesan error ditampilkan</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Akses halaman admin tanpa login</td>
+<td>Langsung akses <code>/admin/dashboard</code></td>
+<td>Diarahkan ke halaman login</td>
+<td>Redirect ke <code>/login</code></td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Logout</td>
+<td>Klik tombol Keluar</td>
+<td>Kembali ke halaman login</td>
+<td>Berhasil logout dan redirect</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="pengujian-manajemen-data">4.3.2 Pengujian Manajemen Data</h4>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 33%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>Skenario Uji</th>
+<th>Hasil Aktual</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Tambah data guru baru</td>
+<td>Data tersimpan dan tampil di tabel</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Edit data siswa</td>
+<td>Perubahan tersimpan dan terupdate</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Hapus data kelas</td>
+<td>Data terhapus dari tabel dan database</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Pencarian data dengan filter</td>
+<td>Hasil filter sesuai dengan kata kunci</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Validasi form (kolom kosong)</td>
+<td>Pesan error validasi ditampilkan</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="pengujian-presensi">4.3.3 Pengujian Presensi</h4>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 33%" />
+<col style="width: 35%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>Skenario Uji</th>
+<th>Hasil Aktual</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Guru mengisi absensi kelas</td>
+<td>Data tersimpan dan muncul di rekap</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Siswa melihat riwayat hadir pribadi</td>
+<td>Data kehadiran pribadi tampil</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Admin melihat rekap absensi seluruh kelas</td>
+<td>Rekap data tampil dengan filter</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Filter laporan berdasarkan tanggal</td>
+<td>Hasil filter sesuai range tanggal</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="pengujian-responsivitas-mobile">4.3.4 Pengujian Responsivitas
+(Mobile)</h4>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 22%" />
+<col style="width: 28%" />
+<col style="width: 22%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>Perangkat</th>
+<th>Ukuran Layar</th>
+<th>Tampilan</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Desktop/Laptop</td>
+<td>1280px ke atas</td>
+<td>Sidebar muncul penuh, konten lebar</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tablet</td>
+<td>768–1280px</td>
+<td>Grid menyesuaikan (2 kolom)</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Smartphone Android</td>
+<td>375–767px</td>
+<td>Sidebar tersembunyi, tombol menu muncul</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Smartphone kecil</td>
+<td>Di bawah 480px</td>
+<td>Semua grid jadi 1 kolom, teks terbaca</td>
+<td>✅ <strong>Lulus</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="analisis-perbandingan-sistem">4.4 Analisis Perbandingan
+Sistem</h3>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 52%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr>
+<th>Aspek</th>
+<th>Sistem Manual (Sebelumnya)</th>
+<th>ASPIRA (Sesudah)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Media Pencatatan</strong></td>
+<td>Kertas / lembar hadir fisik</td>
+<td>Aplikasi web digital</td>
+</tr>
+<tr>
+<td><strong>Kecepatan Rekap</strong></td>
+<td>1–3 hari (manual)</td>
+<td>Instan (otomatis)</td>
+</tr>
+<tr>
+<td><strong>Risiko Kehilangan Data</strong></td>
+<td>Tinggi (fisik bisa hilang/rusak)</td>
+<td>Sangat rendah (cloud backup)</td>
+</tr>
+<tr>
+<td><strong>Akses Siswa</strong></td>
+<td>Tidak tersedia</td>
+<td>Tersedia via portal daring</td>
+</tr>
+<tr>
+<td><strong>Laporan</strong></td>
+<td>Manual oleh TU</td>
+<td>Otomatis dengan filter</td>
+</tr>
+<tr>
+<td><strong>Akses Mobile</strong></td>
+<td>Tidak tersedia</td>
+<td>Mendukung Android</td>
+</tr>
+<tr>
+<td><strong>Pemantauan Real-time</strong></td>
+<td>Tidak ada</td>
+<td>Ya, langsung dari database</td>
+</tr>
+<tr>
+<td><strong>Biaya Operasional</strong></td>
+<td>Kertas, tinta, arsip fisik</td>
+<td>Gratis (open-source + Supabase free tier)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pembahasan">4.5 Pembahasan</h3>
+<p>Berdasarkan hasil implementasi dan pengujian, aplikasi ASPIRA
+berhasil menjawab seluruh rumusan masalah yang telah ditetapkan:</p>
+<ol type="1">
+<li><p><strong>Rumusan Masalah 1</strong> <em>(Sistem presensi
+digital)</em>: ASPIRA berhasil menggantikan proses pencatatan kehadiran
+manual dengan sistem digital berbasis web yang dapat dioperasikan oleh
+guru dari perangkat apa pun yang memiliki browser.</p></li>
+<li><p><strong>Rumusan Masalah 2</strong> <em>(Manajemen data
+terpadu)</em>: Seluruh data akademik — guru, siswa, kelas, mata
+pelajaran, jadwal, dan presensi — berhasil diintegrasikan dalam satu
+platform dengan database terpusat di Supabase PostgreSQL.</p></li>
+<li><p><strong>Rumusan Masalah 3</strong> <em>(Pelaporan otomatis per
+role)</em>: Sistem berhasil mengimplementasikan pembatasan akses
+(<em>role-based access control</em>) yang ketat, di mana setiap pengguna
+hanya dapat mengakses fitur dan data sesuai perannya
+masing-masing.</p></li>
+<li><p><strong>Rumusan Masalah 4</strong> <em>(Antarmuka
+responsif)</em>: ASPIRA berhasil diuji dan berjalan dengan baik di
+perangkat desktop maupun smartphone Android dengan tampilan yang
+menyesuaikan ukuran layar secara otomatis.</p></li>
+</ol>
+<hr />
+<h2 id="bab-v-penutup">BAB V — PENUTUP</h2>
+<hr />
+<h3 id="kesimpulan">5.1 Kesimpulan</h3>
+<p>Berdasarkan proses perancangan, implementasi, dan pengujian yang
+telah dilaksanakan, maka dapat ditarik beberapa kesimpulan sebagai
+berikut:</p>
+<ol type="1">
+<li><p><strong>ASPIRA (Aplikasi Sistem Presensi dan Informasi SMK
+Perpajakan Riau)</strong> berhasil dirancang dan diimplementasikan
+sebagai sistem presensi digital berbasis web menggunakan teknologi
+Vue.js 3 dan Supabase (PostgreSQL), menggantikan sistem pencatatan
+kehadiran manual yang sebelumnya digunakan di SMK Perpajakan
+Riau.</p></li>
+<li><p>Sistem berhasil mengintegrasikan delapan modul data akademik
+(guru, siswa, kelas, mata pelajaran, jadwal, tahun ajaran, users, dan
+absensi) dalam satu platform terpusat yang dapat diakses secara
+daring.</p></li>
+<li><p>Fitur <em>role-based access control</em> (RBAC) berhasil
+diterapkan dengan tiga level akses pengguna — Administrator, Guru, dan
+Siswa — di mana setiap pengguna hanya dapat mengakses fitur yang sesuai
+dengan perannya.</p></li>
+<li><p>Seluruh pengujian fungsional menggunakan metode <strong>Black-Box
+Testing</strong> menghasilkan status <strong>Lulus</strong> pada seluruh
+skenario uji yang telah ditetapkan, termasuk autentikasi, manajemen
+data, pencatatan presensi, dan pelaporan.</p></li>
+<li><p>Antarmuka ASPIRA berhasil dirancang secara
+<strong>responsif</strong> menggunakan prinsip <em>Responsive Web
+Design</em> sehingga dapat digunakan dengan optimal pada perangkat
+<em>desktop</em> maupun <em>smartphone</em> Android.</p></li>
+<li><p>Pengembangan ASPIRA membuktikan bahwa kombinasi <strong>Vue.js 3
++ Supabase</strong> merupakan <em>tech stack</em> yang efektif, efisien,
+dan mampu menghasilkan aplikasi sistem informasi pendidikan yang modern
+dengan waktu pengembangan yang relatif singkat.</p></li>
+</ol>
+<h3 id="saran">5.2 Saran</h3>
+<p>Guna mendukung keberlanjutan dan pengembangan lebih lanjut dari
+sistem ASPIRA, terdapat beberapa saran yang dapat dipertimbangkan:</p>
+<ol type="1">
+<li><p><strong>Penerapan di Server Publik</strong>: Sistem ASPIRA
+sebaiknya di-<em>deploy</em> ke layanan <em>hosting</em> atau <em>cloud
+server</em> (seperti Vercel, Railway, atau VPS) agar dapat diakses oleh
+seluruh warga sekolah tanpa perlu terhubung ke jaringan lokal (LAN/Wi-Fi
+sekolah).</p></li>
+<li><p><strong>Integrasi Notifikasi</strong>: Penambahan fitur
+notifikasi otomatis kepada orang tua/wali siswa (via WhatsApp atau
+email) ketika siswa tidak hadir melebihi ambang batas tertentu.</p></li>
+<li><p><strong>Presensi QR Code</strong>: Untuk meningkatkan efisiensi
+dan akurasi, sistem dapat dikembangkan dengan menambahkan fitur presensi
+mandiri oleh siswa menggunakan pemindaian QR Code.</p></li>
+<li><p><strong>Ekspor Laporan PDF/Excel</strong>: Penambahan fitur
+ekspor laporan rekap absensi ke format PDF atau Microsoft Excel untuk
+keperluan arsip fisik dan pelaporan resmi ke dinas pendidikan.</p></li>
+<li><p><strong>Keamanan Data</strong>: Implementasi enkripsi
+<em>end-to-end</em> dan audit log untuk seluruh aktivitas pengguna guna
+meningkatkan standar keamanan data akademik siswa.</p></li>
+<li><p><strong>Pengembangan Aplikasi Mobile Native</strong>: Untuk
+pengalaman pengguna yang lebih optimal di perangkat Android, dapat
+dipertimbangkan pengembangan aplikasi <em>mobile native</em> menggunakan
+teknologi seperti Flutter atau React Native.</p></li>
+</ol>
+<hr />
+<h2 id="daftar-pustaka">DAFTAR PUSTAKA</h2>
+<hr />
+<ul>
+<li>Andriani, R., Pratama, H., &amp; Wulandari, S. (2023).
+<em>Implementasi Supabase sebagai Backend Sistem Informasi Sekolah</em>.
+Jurnal Teknologi Informasi Pendidikan, 8(2), 45–57.</li>
+<li>Hidayat, A., &amp; Setiawan, B. (2022). <em>Rancang Bangun Aplikasi
+Absensi Digital Menggunakan Framework Vue.js</em>. Jurnal Sistem
+Informasi dan Teknologi, 4(1), 12–24.</li>
+<li>Jogiyanto, H.M. (2017). <em>Sistem Informasi Keperilakuan</em>
+(Edisi Revisi). Yogyakarta: Andi Offset.</li>
+<li>Laudon, K.C., &amp; Laudon, J.P. (2020). <em>Management Information
+Systems: Managing the Digital Firm</em> (16th ed.). Pearson
+Education.</li>
+<li>Marcotte, E. (2010). <em>Responsive Web Design</em>. A List Apart.
+Retrieved from
+https://alistapart.com/article/responsive-web-design/</li>
+<li>Pressman, R.S. (2014). <em>Software Engineering: A Practitioner’s
+Approach</em> (8th ed.). McGraw-Hill Education.</li>
+<li>Purnama, D., Hakim, L., &amp; Santoso, T. (2021). <em>Sistem
+Informasi Presensi Siswa Berbasis Web di SMK Negeri 1 Pekanbaru</em>.
+Jurnal Informatika Pendidikan Riau, 3(1), 78–89.</li>
+<li>Supabase. (2024). <em>Supabase Documentation</em>. Retrieved from
+https://supabase.com/docs</li>
+<li>Vite. (2024). <em>Vite Documentation</em>. Retrieved from
+https://vitejs.dev/guide/</li>
+<li>Vue.js. (2024). <em>Vue.js 3 Documentation</em>. Retrieved from
+https://vuejs.org/guide/introduction.html</li>
+</ul>
+<hr />
+<h2 id="lampiran">LAMPIRAN</h2>
+<hr />
+<h3 id="lampiran-a-struktur-direktori-proyek">Lampiran A — Struktur
+Direktori Proyek</h3>
+<pre><code>absensi-vue/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   ├── AdminLayout.vue      ← Layout tampilan Admin
+│   │   ├── GuruLayout.vue       ← Layout tampilan Guru
+│   │   └── SiswaLayout.vue      ← Layout tampilan Siswa
+│   ├── stores/
+│   │   └── auth.js              ← State autentikasi (Pinia)
+│   ├── views/
+│   │   ├── auth/
+│   │   │   └── LoginView.vue    ← Halaman Login
+│   │   ├── admin/               ← Semua halaman modul Admin
+│   │   ├── guru/                ← Halaman Portal Guru
+│   │   └── siswa/               ← Halaman Portal Siswa
+│   ├── router/
+│   │   └── index.js             ← Konfigurasi routing &amp; guard
+│   ├── lib/
+│   │   └── supabase.js          ← Koneksi Supabase client
+│   ├── App.vue                  ← Komponen root aplikasi
+│   ├── main.js                  ← Entry point aplikasi
+│   └── style.css                ← Global design system
+├── .env                         ← Variabel lingkungan Supabase
+├── index.html                   ← HTML utama + meta SEO
+├── package.json                 ← Dependensi proyek
+└── vite.config.js               ← Konfigurasi Vite</code></pre>
+<h3 id="lampiran-b-skema-database">Lampiran B — Skema Database</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode sql"><code class="sourceCode sql"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Tabel Utama ASPIRA</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> users (<span class="kw">id</span>, username, password_hash, <span class="kw">role</span>, ref_id, <span class="op">..</span>.);</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> guru (<span class="kw">id</span>, nip, nama, email, no_hp, <span class="op">..</span>.);</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> siswa (<span class="kw">id</span>, nis, nama, kelas_id, jenis_kelamin, <span class="op">..</span>.);</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> kelas (<span class="kw">id</span>, nama_kelas, tingkat, jurusan, wali_kelas_id, <span class="op">..</span>.);</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> mata_pelajaran (<span class="kw">id</span>, kode_mapel, nama_mapel, jurusan, <span class="op">..</span>.);</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> jadwal_pelajaran (<span class="kw">id</span>, guru_id, mapel_id, kelas_id, hari, <span class="op">..</span>.);</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> tahun_ajaran (<span class="kw">id</span>, nama, tanggal_mulai, tanggal_selesai, <span class="op">..</span>.);</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> absensi (<span class="kw">id</span>, siswa_id, jadwal_id, tanggal, status, <span class="op">..</span>.);</span></code></pre></div>
+<h3 id="lampiran-c-akun-demo-sistem">Lampiran C — Akun Demo Sistem</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Username</th>
+<th>Password</th>
+<th>Keterangan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrator</td>
+<td><code>admin</code></td>
+<td><code>admin123</code></td>
+<td>Akses penuh ke seluruh sistem</td>
+</tr>
+<tr>
+<td>Guru 1</td>
+<td><code>guru1</code></td>
+<td><code>guru123</code></td>
+<td>Drs. Ahmad Fauzi, M.Pd</td>
+</tr>
+<tr>
+<td>Guru 2</td>
+<td><code>guru2</code></td>
+<td><code>guru123</code></td>
+<td>Siti Rahmawati, S.Pd</td>
+</tr>
+<tr>
+<td>Siswa 1</td>
+<td><code>siswa1</code></td>
+<td><code>siswa123</code></td>
+<td>Andi Pratama — X RPL 1</td>
+</tr>
+<tr>
+<td>Siswa 2</td>
+<td><code>siswa2</code></td>
+<td><code>siswa123</code></td>
+<td>Ani Rahayu — X RPL 1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lampiran-d-url-akses-sistem">Lampiran D — URL Akses Sistem</h3>
+<table>
+<thead>
+<tr>
+<th>Jaringan</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lokal (PC Server)</strong></td>
+<td><code>http://localhost:5173/</code></td>
+</tr>
+<tr>
+<td><strong>Jaringan LAN/Wi-Fi</strong></td>
+<td><code>http://192.168.1.47:5173/</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Catatan</strong>: Pastikan PC server menjalankan perintah
+<code>npm run dev</code> dan perangkat Android terhubung ke jaringan
+Wi-Fi yang sama sebelum mengakses URL jaringan di atas.</p>
+</blockquote>
+<hr />
+<p><em>— Selesai —</em></p>
+<p><em>Proposal ini disusun sebagai dokumentasi resmi pengembangan
+proyek ASPIRA (Aplikasi Sistem Presensi dan Informasi SMK Perpajakan
+Riau) Tahun Ajaran 2025/2026.</em></p>
+</body>
+</html>
